@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Ngo Quynh Duong — AI Builder · SEO Strategist</title>
+<meta name="description" content="Portfolio cá nhân Ngo Quynh Duong — AI Builder, SEO Strategist, MIS Student."/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#f0f6ff;--bg2:#e8f2ff;--sur:#fff;--sur2:#f7faff;
+  --blue:#1565c0;--blum:#1976d2;--blul:#2196f3;--blus:#42a5f5;--blup:#bbdefb;--blug:#e3f2fd;
+  --acc:#0288d1;--wh:#fff;
+  --tx:#0d1b2a;--tx2:#1a3456;--gr:#5c7a99;--gr2:#8faabb;
+  --bdr:rgba(33,150,243,.18);--bdr2:rgba(33,150,243,.35);
+  --sh:0 2px 24px rgba(21,101,192,.10);--shc:0 4px 32px rgba(21,101,192,.13);
+  --rad:14px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',sans-serif;line-height:1.65;overflow-x:hidden}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--blup);border-radius:3px}
+
+/* NAV */
+#nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:64px;background:rgba(255,255,255,.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--bdr);transition:box-shadow .3s}
+#nav.scrolled{box-shadow:var(--sh)}
+.nav-logo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:900;font-size:20px;color:var(--blue);text-decoration:none}
+.nav-logo span{color:var(--blus)}
+.nav-links{display:flex;gap:6px;list-style:none;align-items:center}
+.nav-links a{color:var(--gr);font-size:14px;font-weight:500;text-decoration:none;padding:6px 13px;border-radius:8px;transition:all .2s}
+.nav-links a:hover{color:var(--blue);background:var(--blug)}
+.nav-ab{padding:8px 18px;border-radius:9px;background:var(--blue);color:#fff!important;font-weight:700;font-size:13px;transition:background .2s!important}
+.nav-ab:hover{background:var(--blul)!important}
+
+/* HERO */
+#hero{min-height:100vh;display:flex;align-items:center;padding:100px 48px 80px;background:radial-gradient(ellipse 800px 500px at 75% 40%,rgba(33,150,243,.13) 0%,transparent 65%),radial-gradient(ellipse 500px 300px at 10% 90%,rgba(1,87,155,.07) 0%,transparent 60%),var(--bg);position:relative;overflow:hidden}
+#hero::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--blue),var(--blus),var(--blul))}
+.hero-in{max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 400px;gap:60px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:100px;background:var(--blug);border:1px solid var(--blup);font-size:12px;font-weight:600;color:var(--blue);margin-bottom:24px}
+.hero-badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--blul);animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+h1.hn{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(44px,6vw,74px);font-weight:900;line-height:1.03;letter-spacing:-2.5px;color:var(--tx);margin-bottom:14px}
+h1.hn .gr{background:linear-gradient(120deg,var(--blue) 0%,var(--blus) 55%,var(--acc) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-roles{font-size:16px;font-weight:600;color:var(--blum);margin-bottom:18px}
+.hero-desc{font-size:17px;color:var(--gr);line-height:1.78;max-width:510px;margin-bottom:38px}
+.hero-desc strong{color:var(--tx2);font-weight:600}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn-p{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;border-radius:11px;background:linear-gradient(135deg,var(--blue),var(--blul));color:#fff;font-weight:700;font-size:15px;text-decoration:none;border:none;cursor:pointer;box-shadow:0 6px 28px rgba(21,101,192,.28);transition:transform .2s,box-shadow .2s}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 10px 36px rgba(21,101,192,.38)}
+.btn-s{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;border-radius:11px;background:var(--sur);color:var(--blue);border:1.5px solid var(--bdr2);font-weight:600;font-size:15px;text-decoration:none;cursor:pointer;transition:all .2s}
+.btn-s:hover{background:var(--blug);border-color:var(--blue)}
+.hcard{background:var(--sur);border:1.5px solid var(--bdr2);border-radius:22px;padding:36px;text-align:center;box-shadow:var(--shc);position:relative;overflow:hidden}
+.hcard::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--blue),var(--blus))}
+.avatar{width:110px;height:110px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blus));margin:0 auto 18px;display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:900;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;border:4px solid var(--blug);box-shadow:0 4px 20px rgba(21,101,192,.22)}
+.cname{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:19px;color:var(--tx);margin-bottom:5px}
+.csub{font-size:13px;color:var(--gr);margin-bottom:24px}
+.stat-row{display:flex;justify-content:space-around;padding-top:18px;border-top:1px solid var(--bdr)}
+.sn{font-family:'Plus Jakarta Sans',sans-serif;font-weight:900;font-size:26px;color:var(--blue)}
+.sl{font-size:11px;color:var(--gr);margin-top:3px}
+.otw{display:inline-block;margin-top:20px;padding:7px 16px;border-radius:100px;background:var(--blug);font-size:12px;font-weight:600;color:var(--blue);border:1px solid var(--blup)}
+
+/* SECTIONS */
+section{padding:100px 48px}
+.inner{max-width:1200px;margin:0 auto}
+.stag{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--blus);margin-bottom:10px}
+.stitle{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(28px,4vw,42px);font-weight:900;color:var(--tx);letter-spacing:-1px;margin-bottom:14px;line-height:1.1}
+.ssub{font-size:16px;color:var(--gr);max-width:540px;line-height:1.72}
+.shead{margin-bottom:56px}
+.divider{width:44px;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--blue),var(--blus));margin-bottom:14px}
+.fade{opacity:0;transform:translateY(28px);transition:opacity .55s ease,transform .55s ease}
+.fade.in{opacity:1;transform:none}
+
+/* ABOUT */
+#about{background:var(--sur);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr)}
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.ap{font-size:16px;color:var(--gr);line-height:1.8;margin-bottom:16px}
+.ap strong{color:var(--tx2);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chip{padding:5px 14px;border-radius:100px;background:var(--blug);border:1px solid var(--blup);font-size:12px;font-weight:600;color:var(--blue)}
+.sg{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.si{display:flex;align-items:center;gap:10px;padding:11px 14px;border-radius:10px;background:var(--bg2);border:1px solid var(--bdr);font-size:13px;font-weight:600;color:var(--tx2);transition:border-color .2s,background .2s}
+.si:hover{border-color:var(--blus);background:var(--blug)}
+.sd{width:7px;height:7px;border-radius:50%;background:var(--blus);flex-shrink:0}
+
+/* GOAL */
+#goal{background:var(--bg)}
+.gc{background:linear-gradient(135deg,var(--blue) 0%,var(--blul) 100%);border-radius:22px;padding:52px;color:#fff;position:relative;overflow:hidden}
+.gc::before{content:'';position:absolute;top:-80px;right:-80px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.07)}
+.gc::after{content:'';position:absolute;bottom:-60px;left:200px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.05)}
+.gnum{font-size:11px;font-weight:800;letter-spacing:3px;text-transform:uppercase;opacity:.7;margin-bottom:12px}
+.gtitle{font-family:'Plus Jakarta Sans',sans-serif;font-weight:900;font-size:32px;margin-bottom:20px;line-height:1.15}
+.gtext{font-size:16px;opacity:.9;line-height:1.78;max-width:680px}
+.gtags{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.gtag{padding:6px 16px;border-radius:100px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);font-size:12px;font-weight:700;color:#fff}
+
+/* SKILLS */
+#skills{background:var(--sur);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr)}
+.skc{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.skcard{background:var(--sur2);border:1.5px solid var(--bdr);border-radius:16px;padding:26px;transition:border-color .2s,box-shadow .2s}
+.skcard:hover{border-color:var(--blus);box-shadow:var(--sh)}
+.skicon{font-size:28px;margin-bottom:12px}
+.sktitle{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:16px;color:var(--tx);margin-bottom:14px}
+.sbrow{display:flex;flex-direction:column;gap:10px}
+.sblabel{display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:var(--tx2);margin-bottom:5px}
+.sbtrack{height:6px;border-radius:3px;background:var(--blug);overflow:hidden}
+.sbfill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--blue),var(--blus));transition:width 1.2s ease}
+
+/* PROJECTS */
+#projects{background:var(--bg)}
+.ptabs{display:flex;gap:8px;margin-bottom:40px;flex-wrap:wrap}
+.ptab{padding:8px 20px;border-radius:9px;background:var(--sur);border:1.5px solid var(--bdr);color:var(--gr);font-size:13px;font-weight:600;cursor:pointer;transition:all .2s}
+.ptab.active,.ptab:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pcard{background:var(--sur);border:1.5px solid var(--bdr);border-radius:18px;padding:28px;transition:transform .25s,box-shadow .25s,border-color .25s;position:relative;overflow:hidden}
+.pcard:hover{transform:translateY(-5px);box-shadow:var(--shc);border-color:var(--blus)}
+.pcard::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--blus));opacity:0;transition:opacity .25s}
+.pcard:hover::after{opacity:1}
+.picon{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--blus));display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px;box-shadow:0 4px 14px rgba(21,101,192,.2)}
+.pcat{display:inline-block;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:700;letter-spacing:.5px;margin-bottom:14px}
+.cai{background:var(--blug);color:var(--blue)}
+.cseo{background:#e8f5e9;color:#2e7d32}
+.caut{background:#fff3e0;color:#e65100}
+.cuni{background:#f3e5f5;color:#6a1b9a}
+.ptitle{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:17px;color:var(--tx);margin-bottom:10px;line-height:1.3}
+.pdesc{font-size:13px;color:var(--gr);line-height:1.68;margin-bottom:18px}
+.ptags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}
+.ptag{padding:3px 10px;border-radius:6px;background:var(--bg2);border:1px solid var(--bdr);font-size:11px;color:var(--gr2);font-weight:500}
+.pout{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:8px;background:var(--blug);font-size:12px;font-weight:600;color:var(--blue);margin-bottom:14px}
+.plink{font-size:13px;font-weight:600;color:var(--blue);text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+.plink:hover{color:var(--blul)}
+
+/* ACHIEVEMENTS */
+#achievements{background:var(--sur);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr)}
+.achg{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.achc{background:var(--bg2);border:1.5px solid var(--bdr);border-radius:16px;padding:26px 22px;text-align:center;transition:border-color .2s,box-shadow .2s}
+.achc:hover{border-color:var(--blus);box-shadow:var(--sh)}
+.achi{font-size:32px;margin-bottom:12px}
+.acht{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:15px;color:var(--tx);margin-bottom:6px}
+.achd{font-size:13px;color:var(--gr);line-height:1.55}
+.achb{display:inline-block;margin-top:12px;padding:4px 12px;border-radius:100px;background:var(--blug);border:1px solid var(--blup);font-size:11px;font-weight:700;color:var(--blue)}
+
+/* IP */
+#ip{background:var(--bg)}
+.ipg{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.ipc{background:var(--sur);border:1.5px solid var(--bdr);border-radius:16px;padding:28px;display:flex;gap:18px;align-items:flex-start;transition:border-color .2s}
+.ipc:hover{border-color:var(--blus)}
+.ipico{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--blug),var(--blup));display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.ipt{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:16px;color:var(--tx);margin-bottom:6px}
+.ipd{font-size:13px;color:var(--gr);line-height:1.6}
+.ipb{display:inline-block;margin-top:10px;padding:4px 12px;border-radius:6px;background:var(--blug);font-size:11px;font-weight:700;color:var(--blue)}
+
+/* TESTIMONIALS */
+#testimonials{background:var(--sur);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr)}
+.testg{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.testc{background:var(--bg2);border:1.5px solid var(--bdr);border-radius:16px;padding:28px;transition:border-color .2s,box-shadow .2s}
+.testc:hover{border-color:var(--blus);box-shadow:var(--sh)}
+.testq{font-size:36px;line-height:1;color:var(--blup);font-family:Georgia,serif;margin-bottom:14px}
+.testt{font-size:14px;color:var(--tx2);line-height:1.72;margin-bottom:20px;font-style:italic}
+.testa{display:flex;align-items:center;gap:12px}
+.testav{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blus));display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff;flex-shrink:0}
+.testn{font-weight:700;font-size:14px;color:var(--tx)}
+.testr{font-size:12px;color:var(--gr)}
+
+/* PHILOSOPHY */
+#philosophy{background:var(--bg)}
+.philg{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.philc{background:var(--sur);border:1.5px solid var(--bdr);border-radius:16px;padding:30px;transition:border-color .2s}
+.philc:hover{border-color:var(--blus)}
+.philn{font-family:'Plus Jakarta Sans',sans-serif;font-weight:900;font-size:42px;color:var(--blup);line-height:1;margin-bottom:14px}
+.philt{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;color:var(--tx);margin-bottom:10px}
+.phild{font-size:14px;color:var(--gr);line-height:1.72}
+
+/* TIMELINE */
+#timeline{background:var(--sur);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr)}
+.tlg{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.tltrack{position:relative;padding-left:32px;max-width:640px}
+.tltrack::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,var(--blue),var(--blus),var(--blup))}
+.tli{position:relative;margin-bottom:44px}
+.tldot{position:absolute;left:-28px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--blue);border:3px solid var(--blup);box-shadow:0 0 10px rgba(21,101,192,.3)}
+.tly{font-size:11px;font-weight:800;letter-spacing:1.5px;color:var(--blus);text-transform:uppercase;margin-bottom:5px}
+.tlti{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;color:var(--tx);margin-bottom:6px}
+.tld{font-size:14px;color:var(--gr);line-height:1.68}
+.rcards{display:flex;flex-direction:column;gap:14px}
+.rcrd{background:var(--bg2);border:1.5px solid var(--bdr);border-radius:14px;padding:20px;transition:border-color .2s}
+.rcrd:hover{border-color:var(--blus)}
+.rbadge{display:inline-block;padding:3px 10px;border-radius:6px;font-size:11px;font-weight:700;margin-bottom:10px}
+.rb-e{background:var(--blug);color:var(--blue)}
+.rb-c{background:#e8f5e9;color:#2e7d32}
+.rtitle{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:16px;color:var(--tx);margin-bottom:4px}
+.rmeta{font-size:13px;color:var(--gr)}
+
+/* BLOG */
+#blog{background:var(--bg)}
+.blgg{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.blgc{background:var(--sur);border:1.5px solid var(--bdr);border-radius:18px;overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s}
+.blgc:hover{transform:translateY(-4px);border-color:var(--blus);box-shadow:var(--sh)}
+.blgcov{height:150px;display:flex;align-items:center;justify-content:center;font-size:42px}
+.cv1{background:linear-gradient(135deg,#e3f2fd,#bbdefb)}
+.cv2{background:linear-gradient(135deg,#e0f2f1,#b2dfdb)}
+.cv3{background:linear-gradient(135deg,#ede7f6,#d1c4e9)}
+.blgb{padding:22px}
+.blgcat{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--blus);margin-bottom:9px}
+.blgt{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:16px;color:var(--tx);margin-bottom:10px;line-height:1.4}
+.blgm{font-size:12px;color:var(--gr2);display:flex;gap:14px}
+
+/* CONTACT */
+#contact{background:var(--sur);border-top:1px solid var(--bdr);text-align:center}
+.conw{max-width:640px;margin:0 auto}
+.conem{display:inline-flex;align-items:center;gap:12px;padding:18px 36px;border-radius:14px;background:var(--bg2);border:2px solid var(--bdr2);color:var(--blue);font-size:18px;font-weight:700;text-decoration:none;margin:32px 0;transition:all .2s;box-shadow:var(--sh)}
+.conem:hover{background:var(--blug);border-color:var(--blue)}
+.socrow{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.soc{display:flex;align-items:center;gap:8px;padding:10px 20px;border-radius:10px;background:var(--bg2);border:1.5px solid var(--bdr);color:var(--gr);font-size:13px;font-weight:600;text-decoration:none;transition:all .2s}
+.soc:hover{background:var(--blug);border-color:var(--blue);color:var(--blue)}
+
+/* FOOTER */
+footer{padding:28px 48px;border-top:1px solid var(--bdr);display:flex;align-items:center;justify-content:space-between;background:var(--sur)}
+.flogo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:900;font-size:17px;color:var(--blue)}
+.flogo span{color:var(--blus)}
+footer p{font-size:13px;color:var(--gr2)}
+
+/* ADMIN OVERLAY */
+#adm-ov{display:none;position:fixed;inset:0;z-index:1000;background:rgba(13,27,42,.5);backdrop-filter:blur(6px)}
+#adm-ov.show{display:block}
+#adm{position:fixed;top:0;right:0;bottom:0;z-index:1001;width:700px;max-width:100vw;background:#fff;border-left:1.5px solid var(--bdr2);box-shadow:-8px 0 40px rgba(21,101,192,.15);display:flex;flex-direction:column;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1)}
+#adm.open{transform:none}
+
+/* ADMIN LOGIN */
+#al{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 40px;flex:1;gap:20px}
+.albox{width:100%;max-width:360px;text-align:center}
+.albox h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:900;font-size:24px;color:var(--tx);margin-bottom:6px}
+.albox p{font-size:14px;color:var(--gr);margin-bottom:28px}
+.ali{width:100%;padding:12px 16px;border-radius:10px;background:var(--bg2);border:1.5px solid var(--bdr);color:var(--tx);font-size:14px;margin-bottom:12px;outline:none;font-family:inherit;transition:border-color .2s}
+.ali:focus{border-color:var(--blue)}
+.alb{width:100%;padding:13px;border-radius:11px;background:linear-gradient(135deg,var(--blue),var(--blul));color:#fff;font-weight:700;font-size:15px;border:none;cursor:pointer;box-shadow:0 4px 20px rgba(21,101,192,.25);transition:opacity .2s}
+.alb:hover{opacity:.9}
+.ale{font-size:12px;color:#e53935;margin-top:8px;display:none}
+.alh{margin-top:14px;font-size:12px;color:var(--gr2)}
+.alh code{color:var(--blue);font-weight:700;background:var(--blug);padding:1px 6px;border-radius:4px}
+
+/* ADMIN SHELL */
+#ash{display:none;flex-direction:column;flex:1;overflow:hidden}
+.atop{display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:56px;border-bottom:1.5px solid var(--bdr);flex-shrink:0;background:#fff}
+.atl{display:flex;align-items:center;gap:10px}
+.alogo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:900;font-size:16px;color:var(--blue)}
+.abadge{padding:3px 10px;border-radius:100px;background:var(--blug);border:1px solid var(--blup);font-size:10px;font-weight:800;letter-spacing:1px;color:var(--blue);text-transform:uppercase}
+.atr{display:flex;gap:7px}
+.asave{padding:7px 15px;border-radius:8px;background:var(--blue);color:#fff;font-size:12px;font-weight:700;border:none;cursor:pointer;transition:background .2s}
+.asave:hover{background:var(--blul)}
+.aout{padding:7px 13px;border-radius:8px;background:transparent;border:1.5px solid var(--bdr);color:var(--gr);font-size:12px;cursor:pointer;transition:all .2s}
+.aout:hover{border-color:#e53935;color:#e53935}
+.acls{padding:7px 13px;border-radius:8px;background:transparent;border:1.5px solid var(--bdr);color:var(--gr);font-size:12px;cursor:pointer;transition:all .2s}
+.acls:hover{border-color:var(--blue);color:var(--blue)}
+.abody{display:flex;flex:1;overflow:hidden}
+.aside{width:180px;flex-shrink:0;background:var(--sur2);border-right:1px solid var(--bdr);padding:12px 8px;overflow-y:auto}
+.aslbl{font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--gr2);padding:0 8px;margin:14px 0 6px}
+.anav{display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:9px;cursor:pointer;font-size:12px;font-weight:600;color:var(--gr);transition:all .2s;margin-bottom:2px}
+.anav:hover{background:var(--blug);color:var(--blue)}
+.anav.active{background:var(--blug);color:var(--blue)}
+.andot{width:6px;height:6px;border-radius:50%;background:var(--bdr2);flex-shrink:0}
+.anav.active .andot{background:var(--blue)}
+.acont{flex:1;overflow-y:auto;padding:20px}
+.apan{display:none}
+.apan.active{display:block}
+.apt{font-family:'Plus Jakarta Sans',sans-serif;font-weight:900;font-size:19px;color:var(--tx);margin-bottom:4px}
+.aps{font-size:13px;color:var(--gr);margin-bottom:20px}
+
+/* ADMIN FORMS */
+.fg{display:flex;flex-direction:column;gap:5px;margin-bottom:12px}
+.fgl{font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--gr)}
+.fgi,.fgt,.fgs{padding:9px 12px;border-radius:9px;background:var(--bg2);border:1.5px solid var(--bdr);color:var(--tx);font-size:13px;font-family:inherit;outline:none;transition:border-color .2s;width:100%}
+.fgi:focus,.fgt:focus,.fgs:focus{border-color:var(--blue)}
+.fgt{min-height:76px;resize:vertical}
+.fggs{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.fgfull{grid-column:1/-1}
+.acard{background:var(--sur2);border:1.5px solid var(--bdr);border-radius:12px;padding:16px;margin-bottom:13px}
+.act{font-size:13px;font-weight:700;color:var(--tx);margin-bottom:13px}
+.aadd{display:inline-flex;align-items:center;gap:6px;padding:8px 15px;border-radius:9px;background:var(--blue);color:#fff;font-size:12px;font-weight:700;border:none;cursor:pointer;margin-bottom:12px;transition:background .2s}
+.aadd:hover{background:var(--blul)}
+.arow{background:#fff;border:1.5px solid var(--bdr);border-radius:9px;padding:11px 13px;margin-bottom:7px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.arn{font-size:13px;font-weight:700;color:var(--tx)}
+.ars{font-size:11px;color:var(--gr)}
+.adel{padding:5px 10px;border-radius:7px;background:#fff5f5;border:1.5px solid #ffcdd2;color:#e53935;font-size:11px;font-weight:700;cursor:pointer;flex-shrink:0}
+.adel:hover{background:#ffebee}
+.aedit{padding:5px 10px;border-radius:7px;background:var(--blug);border:1.5px solid var(--blup);color:var(--blue);font-size:11px;font-weight:700;cursor:pointer;flex-shrink:0;margin-right:5px}
+
+/* DASH */
+.dstats{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;margin-bottom:16px}
+.dsc{background:var(--sur2);border:1.5px solid var(--bdr);border-radius:11px;padding:15px;text-align:center}
+.dsn{font-family:'Plus Jakarta Sans',sans-serif;font-weight:900;font-size:26px;color:var(--blue)}
+.dsl{font-size:11px;color:var(--gr);margin-top:3px}
+
+/* COLOR SWATCHES */
+.swrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:9px}
+.sw{width:38px;height:38px;border-radius:9px;cursor:pointer;border:3px solid transparent;transition:transform .15s,border-color .15s}
+.sw:hover,.sw.sel{border-color:var(--blue);transform:scale(1.12)}
+.cpbar{height:5px;border-radius:3px;margin-top:11px;transition:background .3s}
+
+/* TOAST */
+#toast{position:fixed;bottom:28px;right:28px;z-index:2000;background:var(--blue);color:#fff;padding:12px 22px;border-radius:11px;font-size:13px;font-weight:600;box-shadow:0 6px 24px rgba(21,101,192,.35);display:none;animation:sup .3s ease}
+@keyframes sup{from{transform:translateY(20px);opacity:0}to{transform:none;opacity:1}}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  #nav{padding:0 20px}
+  .nav-links{display:none}
+  section{padding:64px 20px}
+  #hero{padding:90px 20px 60px}
+  .hero-in{grid-template-columns:1fr}
+  .hcard{display:none}
+  .ag,.ipg,.philg,.tlg,.fggs{grid-template-columns:1fr}
+  .pgrid,.blgg,.testg,.skc,.achg{grid-template-columns:1fr}
+  footer{flex-direction:column;gap:8px;padding:24px 20px;text-align:center}
+  #adm{width:100vw}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo">NQD<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#" class="nav-ab" onclick="openAdm(event)">⚙ Admin</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-in">
+    <div>
+      <div class="hero-badge">✦ Sẵn sàng cho cơ hội remote &amp; freelance</div>
+      <h1 class="hn">Ngo Quynh<br><span class="gr">Duong</span></h1>
+      <p class="hero-roles">AI Builder · SEO Strategist · Information Systems Student</p>
+      <p class="hero-desc">Tôi xây dựng <strong>AI workflows</strong>, hệ thống automation, <strong>SEO projects</strong> và digital products có khả năng tự vận hành.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-p">Xem Projects →</a>
+        <a href="#contact" class="btn-s">📄 Download CV</a>
+      </div>
+    </div>
+    <div class="hcard fade">
+      <div class="avatar">D</div>
+      <div class="cname">Ngo Quynh Duong</div>
+      <div class="csub">AI · SEO · MIS · Automation</div>
+      <div class="stat-row">
+        <div class="stat"><div class="sn">10+</div><div class="sl">Projects</div></div>
+        <div class="stat"><div class="sn">100+</div><div class="sl">Articles</div></div>
+        <div class="stat"><div class="sn">3+</div><div class="sl">Years</div></div>
+      </div>
+      <div class="otw">🟢 Open to Work</div>
+    </div>
+  </div>
+</section>
+
+<!-- 1. ABOUT -->
+<section id="about">
+  <div class="inner">
+    <div class="shead">
+      <div class="stag">01 · Thông tin cá nhân &amp; Giới thiệu bản thân</div>
+      <div class="divider"></div>
+      <h2 class="stitle">Xây dựng hệ thống tự vận hành bằng AI.</h2>
+    </div>
+    <div class="ag">
+      <div>
+        <p class="ap fade">Xin chào — Tôi là <strong>Ngo Quynh Duong</strong>, sinh viên ngành <strong>Hệ thống Thông tin (MIS)</strong> với đam mê sâu về AI Automation, SEO và Business Systems.</p>
+        <p class="ap fade">Mục tiêu của tôi là tạo ra các hệ thống có khả năng <strong>tự vận hành bằng AI</strong> — từ content pipelines, trading tools đến mạng lưới multi-agent automation.</p>
+        <p class="ap fade">Tôi đã làm việc qua SEO content (100+ bài), AI image generation, n8n automation và startup prototyping — tất cả đều có case study đầy đủ.</p>
+        <div class="chips">
+          <span class="chip">ChatGPT</span><span class="chip">Claude</span><span class="chip">Gemini</span><span class="chip">n8n</span><span class="chip">Make</span><span class="chip">Python</span><span class="chip">MySQL</span><span class="chip">ComfyUI</span><span class="chip">WordPress</span><span class="chip">Astro</span><span class="chip">Git</span><span class="chip">Notion</span><span class="chip">Figma</span><span class="chip">GA4</span>
+        </div>
+      </div>
+      <div class="sg fade">
+        <div class="si"><div class="sd"></div>AI Automation</div>
+        <div class="si"><div class="sd"></div>SEO Strategy</div>
+        <div class="si"><div class="sd"></div>Prompt Engineering</div>
+        <div class="si"><div class="sd"></div>System Analysis</div>
+        <div class="si"><div class="sd"></div>Workflow Design</div>
+        <div class="si"><div class="sd"></div>Content Strategy</div>
+        <div class="si"><div class="sd"></div>Business Analysis</div>
+        <div class="si"><div class="sd"></div>Data Analysis</div>
+        <div class="si"><div class="sd"></div>Research</div>
+        <div class="si"><div class="sd"></div>Project Management</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. CAREER GOAL -->
+<section id="goal">
+  <div class="inner">
+    <div class="shead"><div class="stag">02 · Mục tiêu nghề nghiệp</div><div class="divider"></div></div>
+    <div class="gc fade">
+      <div class="gnum">Career Goal · 2026 → Future</div>
+      <div class="gtitle">Trở thành AI Systems Builder<br>hàng đầu tại Đông Nam Á</div>
+      <div class="gtext">Tôi hướng tới việc xây dựng và vận hành các hệ thống AI tự động hoàn toàn — từ content automation, trading bots đến multi-agent networks. Mục tiêu ngắn hạn là tìm được vị trí remote trong lĩnh vực AI/Automation và xây dựng thương hiệu cá nhân như một AI Builder có portfolio thực chiến.</div>
+      <div class="gtags"><span class="gtag">Remote Work</span><span class="gtag">AI Automation</span><span class="gtag">Freelance</span><span class="gtag">Startup Founder</span><span class="gtag">SEO Consultant</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. SKILLS -->
+<section id="skills">
+  <div class="inner">
+    <div class="shead"><div class="stag">03 · Kỹ năng chuyên môn</div><div class="divider"></div><h2 class="stitle">Tech Stack &amp; Expertise</h2><p class="ssub">Các lĩnh vực kỹ thuật tôi có kinh nghiệm thực chiến.</p></div>
+    <div class="skc">
+      <div class="skcard fade">
+        <div class="skicon">🤖</div><div class="sktitle">AI &amp; Automation</div>
+        <div class="sbrow">
+          <div><div class="sblabel"><span>Prompt Engineering</span><span>92%</span></div><div class="sbtrack"><div class="sbfill" style="width:92%"></div></div></div>
+          <div><div class="sblabel"><span>n8n / Make</span><span>85%</span></div><div class="sbtrack"><div class="sbfill" style="width:85%"></div></div></div>
+          <div><div class="sblabel"><span>ComfyUI / Flux</span><span>78%</span></div><div class="sbtrack"><div class="sbfill" style="width:78%"></div></div></div>
+          <div><div class="sblabel"><span>Multi-Agent</span><span>72%</span></div><div class="sbtrack"><div class="sbfill" style="width:72%"></div></div></div>
+        </div>
+      </div>
+      <div class="skcard fade">
+        <div class="skicon">📈</div><div class="sktitle">SEO &amp; Content</div>
+        <div class="sbrow">
+          <div><div class="sblabel"><span>Keyword Research</span><span>90%</span></div><div class="sbtrack"><div class="sbfill" style="width:90%"></div></div></div>
+          <div><div class="sblabel"><span>On-page SEO</span><span>88%</span></div><div class="sbtrack"><div class="sbfill" style="width:88%"></div></div></div>
+          <div><div class="sblabel"><span>Content Strategy</span><span>83%</span></div><div class="sbtrack"><div class="sbfill" style="width:83%"></div></div></div>
+          <div><div class="sblabel"><span>GSC / GA4</span><span>80%</span></div><div class="sbtrack"><div class="sbfill" style="width:80%"></div></div></div>
+        </div>
+      </div>
+      <div class="skcard fade">
+        <div class="skicon">💻</div><div class="sktitle">Tech &amp; Systems</div>
+        <div class="sbrow">
+          <div><div class="sblabel"><span>Python</span><span>75%</span></div><div class="sbtrack"><div class="sbfill" style="width:75%"></div></div></div>
+          <div><div class="sblabel"><span>MySQL / ERD</span><span>78%</span></div><div class="sbtrack"><div class="sbfill" style="width:78%"></div></div></div>
+          <div><div class="sblabel"><span>System Analysis</span><span>82%</span></div><div class="sbtrack"><div class="sbfill" style="width:82%"></div></div></div>
+          <div><div class="sblabel"><span>Workflow Design</span><span>86%</span></div><div class="sbtrack"><div class="sbfill" style="width:86%"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. PROJECTS -->
+<section id="projects">
+  <div class="inner">
+    <div class="shead"><div class="stag">04 · Dự án / Sản phẩm tiêu biểu</div><div class="divider"></div><h2 class="stitle">Case Studies &amp; Builds</h2><p class="ssub">Mỗi project có đầy đủ: vấn đề, giải pháp, tech stack và kết quả đo lường được.</p></div>
+    <div class="ptabs">
+      <button class="ptab active" onclick="fpj('all',this)">Tất cả</button>
+      <button class="ptab" onclick="fpj('ai',this)">AI</button>
+      <button class="ptab" onclick="fpj('seo',this)">SEO</button>
+      <button class="ptab" onclick="fpj('aut',this)">Automation</button>
+      <button class="ptab" onclick="fpj('uni',this)">University</button>
+    </div>
+    <div class="pgrid" id="pgrid">
+      <div class="pcard fade" data-c="ai"><div class="picon">🎨</div><span class="pcat cai">AI Project · 2026</span><div class="ptitle">AI Fashion Try-On System</div><div class="pout">⚡ Giảm 80% thời gian sản xuất</div><div class="pdesc">Pipeline AI tự động tạo ảnh người mẫu, video ngắn và background cho e-commerce thời trang. Kết nối ComfyUI → n8n → Drive.</div><div class="ptags"><span class="ptag">ComfyUI</span><span class="ptag">Flux</span><span class="ptag">n8n</span><span class="ptag">GPT-4o</span></div><a href="#" class="plink">Xem Case Study →</a></div>
+      <div class="pcard fade" data-c="ai"><div class="picon">✈️</div><span class="pcat cai">AI Startup · Hackathon</span><div class="ptitle">Travel AI Planner</div><div class="pout">🏆 Top 5 Hackathon</div><div class="pdesc">AI tự động lập lịch trình du lịch cá nhân hoá. Xây dựng trong hackathon — từ planning, UX prototype đến pitch deck.</div><div class="ptags"><span class="ptag">GPT-4o</span><span class="ptag">Maps API</span><span class="ptag">n8n</span><span class="ptag">Figma</span></div><a href="#" class="plink">Xem Case Study →</a></div>
+      <div class="pcard fade" data-c="aut"><div class="picon">🤖</div><span class="pcat caut">Automation · 2025</span><div class="ptitle">Multi-Agent AI Network</div><div class="pout">⚙ Tự vận hành 24/7</div><div class="pdesc">Mạng lưới multi-agent kết nối OpenAI, Telegram, Discord và Notion. Tự động xử lý tasks và knowledge management.</div><div class="ptags"><span class="ptag">OpenAI</span><span class="ptag">Telegram</span><span class="ptag">Discord</span><span class="ptag">Notion API</span></div><a href="#" class="plink">Xem Case Study →</a></div>
+      <div class="pcard fade" data-c="seo"><div class="picon">📈</div><span class="pcat cseo">SEO · 2024</span><div class="ptitle">SEO Content Engine</div><div class="pout">📊 100+ articles · Traffic tăng 3x</div><div class="pdesc">Xây và scale content site với 100+ bài tối ưu SEO. Áp dụng keyword research, internal linking và GSC-driven iteration.</div><div class="ptags"><span class="ptag">WordPress</span><span class="ptag">GSC</span><span class="ptag">Ahrefs</span><span class="ptag">GA4</span></div><a href="#" class="plink">Xem Case Study →</a></div>
+      <div class="pcard fade" data-c="aut"><div class="picon">💹</div><span class="pcat caut">Automation · 2025</span><div class="ptitle">Trading Signal Bot</div><div class="pout">📉 Backtested · Winrate 67%</div><div class="pdesc">Bot tự động giám sát thị trường, lọc tín hiệu và push alert qua Telegram. Có dữ liệu backtest đầy đủ.</div><div class="ptags"><span class="ptag">Python</span><span class="ptag">Telegram API</span><span class="ptag">Pandas</span><span class="ptag">n8n</span></div><a href="#" class="plink">Xem Case Study →</a></div>
+      <div class="pcard fade" data-c="uni"><div class="picon">📊</div><span class="pcat cuni">University · MIS</span><div class="ptitle">Business System Design</div><div class="pout">🎓 Điểm A+ Capstone</div><div class="pdesc">Thiết kế hệ thống thông tin cho SME: ER modeling, workflow analysis, system docs và prototype Java.</div><div class="ptags"><span class="ptag">MySQL</span><span class="ptag">UML</span><span class="ptag">Java</span><span class="ptag">ERD</span></div><a href="#" class="plink">Xem Case Study →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="inner">
+    <div class="shead"><div class="stag">05 · Thành tựu / Chứng chỉ / Giải thưởng</div><div class="divider"></div><h2 class="stitle">Achievements</h2></div>
+    <div class="achg">
+      <div class="achc fade"><div class="achi">🏆</div><div class="acht">Hackathon Top 5</div><div class="achd">Travel AI — lọt top 5 cuộc thi AI startup toàn quốc</div><div class="achb">2026</div></div>
+      <div class="achc fade"><div class="achi">📊</div><div class="acht">Google Analytics Cert</div><div class="achd">Chứng chỉ Google Analytics 4 và Google Search Console</div><div class="achb">Google · 2024</div></div>
+      <div class="achc fade"><div class="achi">✍️</div><div class="acht">100+ SEO Articles</div><div class="achd">Xây dựng và publish 100+ bài viết SEO chuẩn, traffic tăng 3x</div><div class="achb">2024–2025</div></div>
+      <div class="achc fade"><div class="achi">🎓</div><div class="acht">MIS Dean's List</div><div class="achd">GPA cao tại khoa Hệ thống Thông tin — Đại học Kinh tế</div><div class="achb">2023–nay</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. IP -->
+<section id="ip">
+  <div class="inner">
+    <div class="shead"><div class="stag">06 · Thông tin bản quyền / Quyền sở hữu</div><div class="divider"></div><h2 class="stitle">Intellectual Property</h2><p class="ssub">Các tài sản số, tools và frameworks tôi đã tạo ra và sở hữu.</p></div>
+    <div class="ipg">
+      <div class="ipc fade"><div class="ipico">⚡</div><div><div class="ipt">AI Automation Framework</div><div class="ipd">Bộ template n8n workflow tự xây để automation content, email và social media. Áp dụng cho nhiều dự án client.</div><div class="ipb">Personal IP · 2025</div></div></div>
+      <div class="ipc fade"><div class="ipico">📝</div><div><div class="ipt">SEO Content System</div><div class="ipd">Hệ thống keyword research + content planning + internal linking, đang vận hành 100+ bài.</div><div class="ipb">Owned · 2024</div></div></div>
+      <div class="ipc fade"><div class="ipico">🤖</div><div><div class="ipt">Prompt Engineering Library</div><div class="ipd">Thư viện 200+ prompt templates được tối ưu cho AI automation, SEO và content strategy.</div><div class="ipb">Private Collection · 2025</div></div></div>
+      <div class="ipc fade"><div class="ipico">💹</div><div><div class="ipt">Trading Signal Algorithm</div><div class="ipd">Thuật toán lọc tín hiệu trading tự xây, đã backtest và chạy thực tế với winrate 67%.</div><div class="ipb">Proprietary · 2025</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. TESTIMONIALS -->
+<section id="testimonials">
+  <div class="inner">
+    <div class="shead"><div class="stag">07 · Phản hồi từ khách hàng / đối tác / quản lý</div><div class="divider"></div><h2 class="stitle">What People Say</h2></div>
+    <div class="testg">
+      <div class="testc fade"><div class="testq">"</div><div class="testt">Duong đã xây dựng hệ thống automation content cho chúng tôi trong 2 tuần. Kết quả vượt kỳ vọng — tiết kiệm 15 giờ/tuần và chất lượng output tăng rõ rệt.</div><div class="testa"><div class="testav">TN</div><div><div class="testn">Nguyen Thanh T.</div><div class="testr">Co-founder · Startup Đà Nẵng</div></div></div></div>
+      <div class="testc fade"><div class="testq">"</div><div class="testt">SEO project của Duong tăng organic traffic của chúng tôi 3x trong 4 tháng. Phân tích keyword rất sâu, bài viết chất lượng cao và có data backup rõ ràng.</div><div class="testa"><div class="testav">ML</div><div><div class="testn">Le Minh M.</div><div class="testr">Marketing Manager · E-commerce</div></div></div></div>
+      <div class="testc fade"><div class="testq">"</div><div class="testt">Một sinh viên hiếm gặp — vừa có tư duy hệ thống tốt vừa biết ứng dụng AI thực tế. Bài làm capstone MIS của Duong là một trong những bài xuất sắc nhất khoá.</div><div class="testa"><div class="testav">PH</div><div><div class="testn">Dr. Pham H.</div><div class="testr">Giảng viên MIS · Đại học Kinh tế</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. PHILOSOPHY -->
+<section id="philosophy">
+  <div class="inner">
+    <div class="shead"><div class="stag">08 · Phương châm làm việc &amp; Định hướng cá nhân</div><div class="divider"></div><h2 class="stitle">Philosophy</h2><p class="ssub">Những nguyên tắc dẫn dắt cách tôi làm việc và xây dựng.</p></div>
+    <div class="philg">
+      <div class="philc fade"><div class="philn">01</div><div class="philt">Build Systems, Not Tasks</div><div class="phild">Tôi không làm mọi thứ thủ công. Mọi quy trình lặp đi lặp lại đều phải được tự động hoá. Một hệ thống tốt sẽ làm việc ngay cả khi bạn ngủ.</div></div>
+      <div class="philc fade"><div class="philn">02</div><div class="philt">Data Drives Decisions</div><div class="phild">Mọi quyết định đều cần được backup bởi data. Từ keyword research đến trading signals — tôi không đoán, tôi đo lường.</div></div>
+      <div class="philc fade"><div class="philn">03</div><div class="philt">Ship Fast, Iterate Faster</div><div class="phild">MVP trong 1 tuần, refine trong 1 tháng. Một sản phẩm tồn tại và nhận feedback luôn tốt hơn một kế hoạch hoàn hảo chưa được build.</div></div>
+      <div class="philc fade"><div class="philn">04</div><div class="philt">AI as a Collaborator</div><div class="phild">AI không thay thế con người — nó khuếch đại. Tôi dùng AI để làm việc của 5 người với chất lượng tốt hơn và chi phí thấp hơn.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE + RESUME -->
+<section id="timeline">
+  <div class="inner">
+    <div class="tlg">
+      <div>
+        <div class="shead" style="margin-bottom:36px"><div class="stag">Hành trình</div><div class="divider"></div><h2 class="stitle">Timeline</h2></div>
+        <div class="tltrack">
+          <div class="tli fade"><div class="tldot"></div><div class="tly">2023</div><div class="tlti">University — MIS</div><div class="tld">Bắt đầu ngành Hệ thống Thông tin. Học database, system design và business analysis.</div></div>
+          <div class="tli fade"><div class="tldot"></div><div class="tly">2024</div><div class="tlti">SEO &amp; Content</div><div class="tld">Xây site SEO từ con số 0. Publish 100+ bài, học keyword research, GSC, internal linking.</div></div>
+          <div class="tli fade"><div class="tldot"></div><div class="tly">2025</div><div class="tlti">AI Workflows</div><div class="tld">Deep dive AI tooling — ComfyUI, GPT, Claude, n8n. Build multi-agent system đầu tiên.</div></div>
+          <div class="tli fade"><div class="tldot"></div><div class="tly">2026</div><div class="tlti">Automation &amp; Startup</div><div class="tld">Hackathon. Trading bot. Portfolio site hoàn chỉnh. Target remote work và freelance.</div></div>
+          <div class="tli fade"><div class="tldot" style="background:var(--blus)"></div><div class="tly" style="color:var(--acc)">Future</div><div class="tlti">Startup &amp; Scale</div><div class="tld">Ra mắt sản phẩm. Xây team. Vận hành hệ thống AI tự động hoàn toàn.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="shead" style="margin-bottom:36px"><div class="stag">Học vấn &amp; Chứng chỉ</div><div class="divider"></div><h2 class="stitle">Resume</h2></div>
+        <div class="rcards">
+          <div class="rcrd fade"><div class="rbadge rb-e">Giáo dục</div><div class="rtitle">Hệ thống Thông tin (MIS)</div><div class="rmeta">Đại học Kinh tế · 2023–nay · GPA 3.6/4.0</div></div>
+          <div class="rcrd fade"><div class="rbadge rb-c">Chứng chỉ</div><div class="rtitle">AI &amp; Automation Practitioner</div><div class="rmeta">Self-directed · n8n, ComfyUI, OpenAI · 2025</div></div>
+          <div class="rcrd fade"><div class="rbadge rb-c">Chứng chỉ</div><div class="rtitle">Google Analytics 4 Certified</div><div class="rmeta">Google · 2024</div></div>
+          <div class="rcrd fade"><div class="rbadge rb-c">Chứng chỉ</div><div class="rtitle">SEO Fundamentals — Semrush</div><div class="rmeta">Semrush Academy · 2024</div></div>
+        </div>
+        <a href="#" class="btn-p" style="display:inline-flex;margin-top:20px">📄 Download Resume PDF</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="inner">
+    <div class="shead"><div class="stag">Blog &amp; Writing</div><div class="divider"></div><h2 class="stitle">Bài viết</h2><p class="ssub">AI, business, psychology, productivity — chia sẻ những gì tôi học được.</p></div>
+    <div class="blgg">
+      <div class="blgc fade"><div class="blgcov cv1">🤖</div><div class="blgb"><div class="blgcat">AI · SEO</div><div class="blgt">How AI is Changing SEO in 2026</div><div class="blgm"><span>Tháng 6 · 2026</span><span>8 min</span></div></div></div>
+      <div class="blgc fade"><div class="blgcov cv2">🧠</div><div class="blgb"><div class="blgcat">Psychology</div><div class="blgt">Halo Effect — Ấn tượng đầu tiên kiểm soát quyết định</div><div class="blgm"><span>Tháng 5 · 2026</span><span>6 min</span></div></div></div>
+      <div class="blgc fade"><div class="blgcov cv3">⚡</div><div class="blgb"><div class="blgcat">Productivity</div><div class="blgt">System Thinking: Người thông minh xây quy trình, không xây thói quen</div><div class="blgm"><span>Tháng 4 · 2026</span><span>7 min</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="inner">
+    <div class="conw">
+      <div class="stag" style="text-align:center">Liên hệ</div>
+      <div class="divider" style="margin:12px auto 14px"></div>
+      <h2 class="stitle" style="text-align:center">Hãy cùng nhau xây dựng</h2>
+      <p class="ssub" style="text-align:center;margin:0 auto">Mở cửa với các cơ hội remote, freelance và hợp tác trong AI, SEO, Automation.</p>
+      <a href="mailto:duong@example.com" class="conem">📧 duong@example.com</a>
+      <div class="socrow">
+        <a href="#" class="soc">💼 LinkedIn</a>
+        <a href="#" class="soc">⌥ GitHub</a>
+        <a href="#" class="soc">▶ TikTok</a>
+        <a href="#" class="soc">f Facebook</a>
+        <a href="#" class="soc">📍 Đà Nẵng, VN</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="flogo">NQD<span>.</span></div>
+  <p>Designed &amp; Built by <strong>Ngo Quynh Duong</strong> · 2026</p>
+  <p style="font-size:12px">Astro + TailwindCSS · Cloudflare Pages</p>
+</footer>
+
+<!-- ══════ ADMIN PANEL ══════ -->
+<div id="adm-ov" onclick="closeAdm()"></div>
+<div id="adm">
+  <!-- LOGIN -->
+  <div id="al">
+    <div class="albox">
+      <div style="font-size:38px;margin-bottom:14px">🔐</div>
+      <h2>Admin Panel</h2>
+      <p>Đăng nhập để quản lý toàn bộ trang web</p>
+      <input class="ali" id="au" type="text" placeholder="Username"/>
+      <input class="ali" id="ap" type="password" placeholder="Password"/>
+      <button class="alb" onclick="doLogin()">Đăng nhập →</button>
+      <div class="ale" id="aerr">Sai thông tin đăng nhập!</div>
+      <div class="alh">Demo: <code>admin</code> / <code>duong2026</code></div>
+    </div>
+  </div>
+
+  <!-- SHELL -->
+  <div id="ash">
+    <div class="atop">
+      <div class="atl"><div class="alogo">NQD · Admin</div><div class="abadge">Full Access</div></div>
+      <div class="atr">
+        <button class="asave" onclick="doSave()">💾 Lưu</button>
+        <button class="aout" onclick="doLogout()">Đăng xuất</button>
+        <button class="acls" onclick="closeAdm()">✕ Đóng</button>
+      </div>
+    </div>
+    <div class="abody">
+      <div class="aside">
+        <div class="aslbl">Tổng quan</div>
+        <div class="anav active" onclick="ag('dash',this)"><div class="andot"></div>Dashboard</div>
+        <div class="aslbl">Nội dung</div>
+        <div class="anav" onclick="ag('hero',this)"><div class="andot"></div>Hero</div>
+        <div class="anav" onclick="ag('about',this)"><div class="andot"></div>01 · About</div>
+        <div class="anav" onclick="ag('goal',this)"><div class="andot"></div>02 · Career Goal</div>
+        <div class="anav" onclick="ag('skills',this)"><div class="andot"></div>03 · Skills</div>
+        <div class="anav" onclick="ag('proj',this)"><div class="andot"></div>04 · Projects</div>
+        <div class="anav" onclick="ag('ach',this)"><div class="andot"></div>05 · Achievements</div>
+        <div class="anav" onclick="ag('ip',this)"><div class="andot"></div>06 · IP &amp; Rights</div>
+        <div class="anav" onclick="ag('test',this)"><div class="andot"></div>07 · Testimonials</div>
+        <div class="anav" onclick="ag('phil',this)"><div class="andot"></div>08 · Philosophy</div>
+        <div class="anav" onclick="ag('tl',this)"><div class="andot"></div>Timeline</div>
+        <div class="anav" onclick="ag('blog',this)"><div class="andot"></div>Blog</div>
+        <div class="anav" onclick="ag('con',this)"><div class="andot"></div>Contact</div>
+        <div class="aslbl">Cài đặt</div>
+        <div class="anav" onclick="ag('design',this)"><div class="andot"></div>Màu &amp; Font</div>
+        <div class="anav" onclick="ag('seo',this)"><div class="andot"></div>SEO Settings</div>
+      </div>
+      <div class="acont">
+
+        <!-- DASHBOARD -->
+        <div class="apan active" id="p-dash">
+          <div class="apt">Dashboard</div>
+          <div class="aps">Xin chào Duong! Toàn quyền quản lý trang web.</div>
+          <div class="dstats">
+            <div class="dsc"><div class="dsn">6</div><div class="dsl">Projects</div></div>
+            <div class="dsc"><div class="dsn">3</div><div class="dsl">Blog Posts</div></div>
+            <div class="dsc"><div class="dsn">8</div><div class="dsl">Sections</div></div>
+            <div class="dsc"><div class="dsn">3</div><div class="dsl">Testimonials</div></div>
+          </div>
+          <div class="acard">
+            <div class="act">⚡ Truy cập nhanh</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px">
+              <div style="padding:12px;background:#fff;border:1.5px solid var(--bdr);border-radius:9px;cursor:pointer" onclick="ag('hero',null)"><div style="font-size:18px;margin-bottom:4px">✏️</div><div style="font-size:12px;font-weight:700;color:var(--tx)">Sửa Hero</div></div>
+              <div style="padding:12px;background:#fff;border:1.5px solid var(--bdr);border-radius:9px;cursor:pointer" onclick="ag('proj',null)"><div style="font-size:18px;margin-bottom:4px">🗂️</div><div style="font-size:12px;font-weight:700;color:var(--tx)">Thêm Project</div></div>
+              <div style="padding:12px;background:#fff;border:1.5px solid var(--bdr);border-radius:9px;cursor:pointer" onclick="ag('blog',null)"><div style="font-size:18px;margin-bottom:4px">✍️</div><div style="font-size:12px;font-weight:700;color:var(--tx)">Viết Blog</div></div>
+              <div style="padding:12px;background:#fff;border:1.5px solid var(--bdr);border-radius:9px;cursor:pointer" onclick="ag('design',null)"><div style="font-size:18px;margin-bottom:4px">🎨</div><div style="font-size:12px;font-weight:700;color:var(--tx)">Đổi Màu</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO -->
+        <div class="apan" id="p-hero">
+          <div class="apt">Hero Section</div><div class="aps">Tên, tagline, mô tả và nút CTA.</div>
+          <div class="acard">
+            <div class="act">👤 Thông tin hiển thị</div>
+            <div class="fggs">
+              <div class="fg"><div class="fgl">Họ tên</div><input class="fgi" value="Ngo Quynh Duong"/></div>
+              <div class="fg"><div class="fgl">Roles</div><input class="fgi" value="AI Builder · SEO Strategist · Information Systems Student"/></div>
+              <div class="fg fgfull"><div class="fgl">Mô tả</div><textarea class="fgt">Tôi xây dựng AI workflows, hệ thống automation, SEO projects và digital products có khả năng tự vận hành.</textarea></div>
+              <div class="fg"><div class="fgl">Badge text</div><input class="fgi" value="Sẵn sàng cho cơ hội remote & freelance"/></div>
+              <div class="fg"><div class="fgl">Email</div><input class="fgi" value="duong@example.com"/></div>
+              <div class="fg"><div class="fgl">Nút chính</div><input class="fgi" value="Xem Projects →"/></div>
+              <div class="fg"><div class="fgl">Nút phụ</div><input class="fgi" value="📄 Download CV"/></div>
+            </div>
+          </div>
+          <div class="acard">
+            <div class="act">📊 Thống kê card</div>
+            <div class="fggs">
+              <div class="fg"><div class="fgl">Stat 1 số</div><input class="fgi" value="10+"/></div>
+              <div class="fg"><div class="fgl">Stat 1 nhãn</div><input class="fgi" value="Projects"/></div>
+              <div class="fg"><div class="fgl">Stat 2 số</div><input class="fgi" value="100+"/></div>
+              <div class="fg"><div class="fgl">Stat 2 nhãn</div><input class="fgi" value="Articles"/></div>
+              <div class="fg"><div class="fgl">Stat 3 số</div><input class="fgi" value="3+"/></div>
+              <div class="fg"><div class="fgl">Stat 3 nhãn</div><input class="fgi" value="Years Exp"/></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABOUT -->
+        <div class="apan" id="p-about">
+          <div class="apt">01 · About</div><div class="aps">Nội dung giới thiệu và kỹ năng.</div>
+          <div class="acard">
+            <div class="act">📝 Bio (3 đoạn)</div>
+            <div class="fg"><div class="fgl">Đoạn 1</div><textarea class="fgt">Xin chào — Tôi là Ngo Quynh Duong, sinh viên ngành Hệ thống Thông tin với đam mê sâu về AI Automation, SEO và Business Systems.</textarea></div>
+            <div class="fg"><div class="fgl">Đoạn 2</div><textarea class="fgt">Mục tiêu của tôi là tạo ra các hệ thống có khả năng tự vận hành bằng AI — từ content pipelines, trading tools đến mạng lưới multi-agent automation.</textarea></div>
+            <div class="fg"><div class="fgl">Đoạn 3</div><textarea class="fgt">Tôi đã làm việc qua SEO content (100+ bài), AI image generation, n8n automation và startup prototyping.</textarea></div>
+          </div>
+          <div class="acard">
+            <div class="act">🛠️ Skills (10 kỹ năng)</div>
+            <div class="fggs">
+              <div class="fg"><input class="fgi" value="AI Automation"/></div><div class="fg"><input class="fgi" value="SEO Strategy"/></div>
+              <div class="fg"><input class="fgi" value="Prompt Engineering"/></div><div class="fg"><input class="fgi" value="System Analysis"/></div>
+              <div class="fg"><input class="fgi" value="Workflow Design"/></div><div class="fg"><input class="fgi" value="Content Strategy"/></div>
+              <div class="fg"><input class="fgi" value="Business Analysis"/></div><div class="fg"><input class="fgi" value="Data Analysis"/></div>
+              <div class="fg"><input class="fgi" value="Research"/></div><div class="fg"><input class="fgi" value="Project Management"/></div>
+            </div>
+          </div>
+          <div class="acard">
+            <div class="act">💻 Tech Stack (cách bằng dấu phẩy)</div>
+            <div class="fg"><input class="fgi" value="ChatGPT, Claude, Gemini, n8n, Make, Python, MySQL, ComfyUI, WordPress, Astro, Git, Notion, Figma, GA4"/></div>
+          </div>
+        </div>
+
+        <!-- GOAL -->
+        <div class="apan" id="p-goal">
+          <div class="apt">02 · Career Goal</div><div class="aps">Mục tiêu nghề nghiệp.</div>
+          <div class="acard">
+            <div class="fg"><div class="fgl">Tiêu đề</div><input class="fgi" value="Trở thành AI Systems Builder hàng đầu tại Đông Nam Á"/></div>
+            <div class="fg"><div class="fgl">Nội dung</div><textarea class="fgt">Tôi hướng tới việc xây dựng và vận hành các hệ thống AI tự động hoàn toàn — từ content automation, trading bots đến multi-agent networks.</textarea></div>
+            <div class="fg"><div class="fgl">Tags (cách bằng dấu phẩy)</div><input class="fgi" value="Remote Work, AI Automation, Freelance, Startup Founder, SEO Consultant"/></div>
+          </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="apan" id="p-skills">
+          <div class="apt">03 · Skills</div><div class="aps">Thanh kỹ năng và phần trăm.</div>
+          <div class="acard"><div class="act">🤖 AI &amp; Automation</div>
+            <div class="fggs">
+              <div class="fg"><div class="fgl">Kỹ năng 1</div><input class="fgi" value="Prompt Engineering"/></div><div class="fg"><div class="fgl">%</div><input class="fgi" type="number" value="92" min="0" max="100"/></div>
+              <div class="fg"><div class="fgl">Kỹ năng 2</div><input class="fgi" value="n8n / Make"/></div><div class="fg"><div class="fgl">%</div><input class="fgi" type="number" value="85" min="0" max="100"/></div>
+              <div class="fg"><div class="fgl">Kỹ năng 3</div><input class="fgi" value="ComfyUI / Flux"/></div><div class="fg"><div class="fgl">%</div><input class="fgi" type="number" value="78" min="0" max="100"/></div>
+              <div class="fg"><div class="fgl">Kỹ năng 4</div><input class="fgi" value="Multi-Agent"/></div><div class="fg"><div class="fgl">%</div><input class="fgi" type="number" value="72" min="0" max="100"/></div>
+            </div>
+          </div>
+          <div class="acard"><div class="act">📈 SEO &amp; Content</div>
+            <div class="fggs">
+              <div class="fg"><div class="fgl">Kỹ năng 1</div><input class="fgi" value="Keyword Research"/></div><div class="fg"><div class="fgl">%</div><input class="fgi" type="number" value="90" min="0" max="100"/></div>
+              <div class="fg"><div class="fgl">Kỹ năng 2</div><input class="fgi" value="On-page SEO"/></div><div class="fg"><div class="fgl">%</div><input class="fgi" type="number" value="88" min="0" max="100"/></div>
+              <div class="fg"><div class="fgl">Kỹ năng 3</div><input class="fgi" value="Content Strategy"/></div><div class="fg"><div class="fgl">%</div><input class="fgi" type="number" value="83" min="0" max="100"/></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="apan" id="p-proj">
+          <div class="apt">04 · Projects</div><div class="aps">Thêm, sửa, xoá case study.</div>
+          <button class="aadd" onclick="tgNP()">+ Thêm project mới</button>
+          <div id="npf" style="display:none" class="acard">
+            <div class="act">➕ Project mới</div>
+            <div class="fggs">
+              <div class="fg"><div class="fgl">Tên</div><input class="fgi" id="npn" placeholder="AI Resume Builder"/></div>
+              <div class="fg"><div class="fgl">Danh mục</div><select class="fgs" id="npc"><option value="ai">AI</option><option value="seo">SEO</option><option value="aut">Automation</option><option value="uni">University</option></select></div>
+              <div class="fg fgfull"><div class="fgl">Mô tả</div><textarea class="fgt" id="npd" placeholder="Mô tả project..."></textarea></div>
+              <div class="fg"><div class="fgl">Tech Stack</div><input class="fgi" id="npt" placeholder="GPT, n8n..."/></div>
+              <div class="fg"><div class="fgl">Kết quả nổi bật</div><input class="fgi" id="npo" placeholder="Tiết kiệm 80% thời gian"/></div>
+              <div class="fg"><div class="fgl">Link GitHub / Demo</div><input class="fgi" id="npl" placeholder="https://..."/></div>
+            </div>
+            <button class="aadd" onclick="addProj()" style="margin-bottom:0">✓ Thêm</button>
+          </div>
+          <div id="plist">
+            <div class="arow"><div><div class="arn">🎨 AI Fashion Try-On System</div><div class="ars">AI · ComfyUI, Flux, n8n, GPT-4o</div></div><div><button class="adel" onclick="this.closest('.arow').remove()">Xoá</button></div></div>
+            <div class="arow"><div><div class="arn">✈️ Travel AI Planner</div><div class="ars">AI · GPT, Maps API, n8n, Figma</div></div><div><button class="adel" onclick="this.closest('.arow').remove()">Xoá</button></div></div>
+            <div class="arow"><div><div class="arn">🤖 Multi-Agent AI Network</div><div class="ars">Automation · OpenAI, Telegram, Discord</div></div><div><button class="adel" onclick="this.closest('.arow').remove()">Xoá</button></div></div>
+            <div class="arow"><div><div class="arn">📈 SEO Content Engine</div><div class="ars">SEO · WordPress, GSC, Ahrefs</div></div><div><button class="adel" onclick="this.closest('.arow').remove()">Xoá</button></div></div>
+            <div class="arow"><div><div class="arn">💹 Trading Signal Bot</div><div class="ars">Automation · Python, Telegram, Pandas</div></div><div><button class="adel" onclick="this.closest('.arow').remove()">Xoá</button></div></div>
+            <div class="arow"><div><div class="arn">📊 Business System Design</div><div class="ars">University · MySQL, Java, UML</div></div><div><button class="adel" onclick="this.closest('.arow').remove()">Xoá</button></div></div>
+          </div>
+        </div>
+
+        <!-- ACHIEVEMENTS -->
+        <div class="apan" id="p-ach">
+          <div class="apt">05 · Achievements</div><div class="aps">Thành tựu, chứng chỉ, giải thưởng.</div>
+          <button class="aadd" onclick="tgAF()">+ Thêm thành tựu</button>
+          <div id="af" style="display:none" class="acard">
+            <div class="fggs">
+              <div class="fg"><div class="fgl">Icon</div><input class="fgi" id="ai-i" placeholder="🏆"/></div>
+              <div class="fg"><div class="fgl">Tiêu đề</div><input class="fgi" id="ai-t" placeholder="Giải thưởng..."/></div>
+              <div class="fg fgfull"><div class="fgl">Mô tả</div><input class="fgi" id="ai-d" placeholder="Mô tả ngắn..."/></div>
+              <div class="fg"><div class="fgl">Badge</div><input class="fgi" id="ai-b" placeholder="2026"/></div>
+            </div>
+            <button class="aadd" onclick="addAch()" style="margin-bottom:0">✓ Thêm</button>
+          </div>
+          <div id="alist">
+            <div class="arow"><div><div class="arn">🏆 Hackathon Top 5</div><div class="ars">Travel AI · 2026</div></div><div><button class="adel" onclick="this.closest('.arow').remove()">Xoá</button></div></div>
+            <div class="arow"><div><div class="arn">📊 Google Analytics 4 Cert</div><div class="ars">Google · 2024</div></div><div><button class="adel" onclick="this.closest('.arow').remove()">Xoá</button></div></div>
+            <div class="arow"><div><div class="arn">✍️ 100+ SEO Articles</div><div class="ars">2024–2025</div></div><div><button class="adel" onclick="this.closest('.arow').remove()">Xoá</button></div></div>
+            <div class="arow"><div><div class="arn">🎓 MIS Dean's List</div><div class="ars">Đại học Kinh tế · 2023–nay</div></div><div><button class="adel" onclick="this.closest('.arow').remove()">Xoá</button></div></div>
+          </div>
+        </div>
+
+        <!-- IP -->
+        <div class="apan" id="p-ip">
+          <div class="apt">06 · IP &amp; Rights</div><div class="aps">Tài sản số và quyền sở hữu.</div>
+          <div class="acard"><div class="act">Tài sản 1</div>
+            <div class="fggs">
+              <div class="fg"><div class="fgl">Tên</div><input class="fgi" value="AI Automation Framework"/></div>
+              <div class="fg"><div class="fgl">Badge</div><input class="fgi" value="Personal IP · 2025"/></div>
+              <div class="fg fgfull"><div class="fgl">Mô tả</div><textarea class="fgt" style="min-height:56px">Bộ template n8n workflow tự xây để automation content, email và social media.</textarea></div>
+            </div>
+          </div>
+          <div class="acard"><div class="act">Tài sản 2</div>
+            <div class="fggs">
+              <div class="fg"><div class="fgl">Tên</div><input class="fgi" value="SEO Content System"/></div>
+              <div class="fg"><div class="fgl">Badge</div><input class="fgi" value="Owned · 2024"/></div>
+              <div class="fg fgfull"><div class="fgl">Mô tả</div><textarea class="fgt" style="min-height:56px">Hệ thống keyword research + content planning + internal linking, 100+ bài vận hành.</textarea></div>
+            </div>
+          </div>
+          <div class="acard"><div class="act">Tài sản 3</div>
+            <div class="fggs">
+              <div class="fg"><div class="fgl">Tên</div><input class="fgi" value="Prompt Engineering Library"/></div>
+              <div class="fg"><div class="fgl">Badge</div><input class="fgi" value="Private Collection · 2025"/></div>
+              <div class="fg fgfull"><div class="fgl">Mô tả</div><textarea class="fgt" style="min-height:56px">Thư viện 200+ prompt templates tối ưu cho AI automation, SEO và content.</textarea></div>
+            </div>
+          </div>
+          <button class="aadd">+ Thêm tài sản mới</button>
+        </div>
+
+        <!-- TESTIMONIALS -->
+        <div class="apan" id="p-test">
+          <div class="apt">07 · Testimonials</div><div class="aps">Phản hồi từ khách hàng và đối tác.</div>
+          <button class="aadd" onclick="tgTF()">+ Thêm testimonial</button>
+          <div id="tf" style="display:none" class="acard">
+            <div class="fggs">
+              <div class="fg"><div class="fgl">Tên người phản hồi</div><input class="fgi" id="tn" placeholder="Nguyen Van A"/></div>
+              <div class="fg"><div class="fgl">Chức vụ / Công ty</div><input class="fgi" id="tr" placeholder="CEO · Startup XYZ"/></div>
+              <div class="fg fgfull"><div class="fgl">Nội dung</div><textarea class="fgt" id="tt" placeholder="Phản hồi..."></textarea></div>
+            </div>
+            <button class="aadd" onclick="addTest()" style="margin-bottom:0">✓ Thêm</button>
+          </div>
+          <div id="tlist">
+            <div class="arow"><div><div class="arn">Nguyen Thanh T. — Co-founder · Startup Đà Nẵng</div><div class="ars">"Duong đã xây dựng hệ thống automation..."</div></div><div><button class="adel" onclick="this.closest('.arow').remove()">Xoá</button></div></div>
+            <div class="arow"><div><div class="arn">Le Minh M. — Marketing Manager</div><div class="ars">"SEO project tăng organic traffic 3x..."</div></div><div><button class="adel" onclick="this.closest('.arow').remove()">Xoá</button></div></div>
+            <div class="arow"><div><div class="arn">Dr. Pham H. — Giảng viên MIS</div><div class="ars">"Một sinh viên hiếm gặp..."</div></div><div><button class="adel" onclick="this.closest('.arow').remove()">Xoá</button></div></div>
+          </div>
+        </div>
+
+        <!-- PHILOSOPHY -->
+        <div class="apan" id="p-phil">
+          <div class="apt">08 · Philosophy</div><div class="aps">Phương châm làm việc và định hướng cá nhân.</div>
+          <div class="acard"><div class="fggs">
+            <div class="fg"><div class="fgl">Phương châm 1</div><input class="fgi" value="Build Systems, Not Tasks"/></div>
+            <div class="fg fgfull"><div class="fgl">Nội dung</div><textarea class="fgt" style="min-height:56px">Tôi không làm mọi thứ thủ công. Mọi quy trình lặp lại đều phải được tự động hoá.</textarea></div>
+            <div class="fg"><div class="fgl">Phương châm 2</div><input class="fgi" value="Data Drives Decisions"/></div>
+            <div class="fg fgfull"><div class="fgl">Nội dung</div><textarea class="fgt" style="min-height:56px">Mọi quyết định đều cần backup bởi data. Tôi không đoán, tôi đo lường.</textarea></div>
+            <div class="fg"><div class="fgl">Phương châm 3</div><input class="fgi" value="Ship Fast, Iterate Faster"/></div>
+            <div class="fg fgfull"><div class="fgl">Nội dung</div><textarea class="fgt" style="min-height:56px">MVP trong 1 tuần, refine trong 1 tháng. Một sản phẩm tồn tại luôn tốt hơn kế hoạch hoàn hảo chưa được build.</textarea></div>
+            <div class="fg"><div class="fgl">Phương châm 4</div><input class="fgi" value="AI as a Collaborator"/></div>
+            <div class="fg fgfull"><div class="fgl">Nội dung</div><textarea class="fgt" style="min-height:56px">AI không thay thế con người — nó khuếch đại. Tôi dùng AI để làm việc của 5 người.</textarea></div>
+          </div></div>
+        </div>
+
+        <!-- TIMELINE -->
+        <div class="apan" id="p-tl">
+          <div class="apt">Timeline</div><div class="aps">Hành trình theo từng năm.</div>
+          <button class="aadd" onclick="addTL()">+ Thêm mốc thời gian</button>
+          <div id="tllist">
+            <div class="acard" style="padding:13px"><div class="fggs"><div class="fg"><div class="fgl">Năm</div><input class="fgi" value="2023"/></div><div class="fg"><div class="fgl">Tiêu đề</div><input class="fgi" value="University — MIS"/></div><div class="fg fgfull"><div class="fgl">Mô tả</div><textarea class="fgt" style="min-height:50px">Bắt đầu ngành Hệ thống Thông tin. Học database, system design và business analysis.</textarea></div></div></div>
+            <div class="acard" style="padding:13px"><div class="fggs"><div class="fg"><div class="fgl">Năm</div><input class="fgi" value="2024"/></div><div class="fg"><div class="fgl">Tiêu đề</div><input class="fgi" value="SEO & Content"/></div><div class="fg fgfull"><div class="fgl">Mô tả</div><textarea class="fgt" style="min-height:50px">Xây site SEO từ con số 0. Publish 100+ bài, học keyword research, GSC, internal linking.</textarea></div></div></div>
+            <div class="acard" style="padding:13px"><div class="fggs"><div class="fg"><div class="fgl">Năm</div><input class="fgi" value="2025"/></div><div class="fg"><div class="fgl">Tiêu đề</div><input class="fgi" value="AI Workflows"/></div><div class="fg fgfull"><div class="fgl">Mô tả</div><textarea class="fgt" style="min-height:50px">Deep dive AI tooling — ComfyUI, GPT, Claude, n8n. Build multi-agent system đầu tiên.</textarea></div></div></div>
+          </div>
+        </div>
+
+        <!-- BLOG -->
+        <div class="apan" id="p-blog">
+          <div class="apt">Blog</div><div class="aps">Quản lý bài viết.</div>
+          <button class="aadd" onclick="tgBF()">+ Viết bài mới</button>
+          <div id="bf" style="display:none" class="acard">
+            <div class="fggs">
+              <div class="fg fgfull"><div class="fgl">Tiêu đề</div><input class="fgi" id="bt" placeholder="Tiêu đề bài viết..."/></div>
+              <div class="fg"><div class="fgl">Danh mục</div><input class="fgi" id="bc" placeholder="AI · SEO"/></div>
+              <div class="fg"><div class="fgl">Ngày · Thời gian đọc</div><input class="fgi" id="bm" placeholder="Tháng 7 · 2026 · 5 min"/></div>
+            </div>
+            <button class="aadd" onclick="addBlog()" style="margin-bottom:0">✓ Thêm</button>
+          </div>
+          <div id="blist">
+            <div class="arow"><div><div class="arn">How AI is Changing SEO in 2026</div><div class="ars">AI · SEO · Tháng 6 · 2026 · 8 min</div></div><div><button class="adel" onclick="this.closest('.arow').remove()">Xoá</button></div></div>
+            <div class="arow"><div><div class="arn">Halo Effect — Ấn tượng đầu tiên</div><div class="ars">Psychology · Tháng 5 · 2026 · 6 min</div></div><div><button class="adel" onclick="this.closest('.arow').remove()">Xoá</button></div></div>
+            <div class="arow"><div><div class="arn">System Thinking: Quy trình vs Thói quen</div><div class="ars">Productivity · Tháng 4 · 2026 · 7 min</div></div><div><button class="adel" onclick="this.closest('.arow').remove()">Xoá</button></div></div>
+          </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="apan" id="p-con">
+          <div class="apt">Contact</div><div class="aps">Thông tin liên hệ và mạng xã hội.</div>
+          <div class="acard"><div class="fggs">
+            <div class="fg"><div class="fgl">Email</div><input class="fgi" value="duong@example.com"/></div>
+            <div class="fg"><div class="fgl">Địa điểm</div><input class="fgi" value="Đà Nẵng, Vietnam"/></div>
+            <div class="fg"><div class="fgl">LinkedIn</div><input class="fgi" placeholder="https://linkedin.com/in/..."/></div>
+            <div class="fg"><div class="fgl">GitHub</div><input class="fgi" placeholder="https://github.com/..."/></div>
+            <div class="fg"><div class="fgl">TikTok</div><input class="fgi" placeholder="https://tiktok.com/@..."/></div>
+            <div class="fg"><div class="fgl">Facebook</div><input class="fgi" placeholder="https://facebook.com/..."/></div>
+            <div class="fg fgfull"><div class="fgl">Lời mời hợp tác</div><textarea class="fgt">Mở cửa với các cơ hội remote, freelance và hợp tác trong AI, SEO, Automation.</textarea></div>
+          </div></div>
+        </div>
+
+        <!-- DESIGN -->
+        <div class="apan" id="p-design">
+          <div class="apt">Màu &amp; Font</div><div class="aps">Tuỳ chỉnh giao diện toàn trang.</div>
+          <div class="acard">
+            <div class="act">🎨 Màu accent chính</div>
+            <div class="swrow">
+              <div class="sw sel" style="background:#1976d2" onclick="pColor(this,'#1976d2','#42a5f5')" title="Blue"></div>
+              <div class="sw" style="background:#0288d1" onclick="pColor(this,'#0288d1','#29b6f6')" title="Sky Blue"></div>
+              <div class="sw" style="background:#0d47a1" onclick="pColor(this,'#0d47a1','#1565c0')" title="Deep Blue"></div>
+              <div class="sw" style="background:#7c3aed" onclick="pColor(this,'#7c3aed','#a78bfa')" title="Purple"></div>
+              <div class="sw" style="background:#0d9488" onclick="pColor(this,'#0d9488','#2dd4bf')" title="Teal"></div>
+              <div class="sw" style="background:#059669" onclick="pColor(this,'#059669','#34d399')" title="Green"></div>
+              <div class="sw" style="background:#dc2626" onclick="pColor(this,'#dc2626','#f87171')" title="Red"></div>
+              <div class="sw" style="background:#db2777" onclick="pColor(this,'#db2777','#f472b6')" title="Pink"></div>
+            </div>
+            <div style="margin-top:12px">
+              <div class="fgl" style="margin-bottom:6px">Mã màu HEX tuỳ chỉnh</div>
+              <input class="fgi" id="chex" placeholder="#1976d2" style="max-width:180px" oninput="cColor(this.value)"/>
+            </div>
+            <div id="cpbar" class="cpbar" style="background:#1976d2"></div>
+            <div style="margin-top:10px;display:flex;gap:10px;align-items:center">
+              <div id="cpbtn" style="display:inline-block;padding:8px 18px;border-radius:9px;background:#1976d2;color:#fff;font-size:12px;font-weight:700">Xem Projects →</div>
+              <span style="font-size:11px;color:var(--gr2)">Preview nút</span>
+            </div>
+          </div>
+          <div class="acard">
+            <div class="act">🔤 Font chữ</div>
+            <div class="fggs">
+              <div class="fg"><div class="fgl">Font nội dung</div><select class="fgs"><option>Inter (hiện tại)</option><option>Plus Jakarta Sans</option><option>Manrope</option></select></div>
+              <div class="fg"><div class="fgl">Font tiêu đề</div><select class="fgs"><option>Plus Jakarta Sans (hiện tại)</option><option>Inter</option><option>Manrope</option></select></div>
+            </div>
+          </div>
+          <div class="acard">
+            <div class="act">🌙 Chế độ nền</div>
+            <div style="display:flex;gap:10px">
+              <button class="aadd" style="background:#1976d2;margin-bottom:0" onclick="setMode('light')">☀ Sáng</button>
+              <button class="aadd" style="background:#1a1a2e;margin-bottom:0" onclick="setMode('dark')">🌙 Tối</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEO -->
+        <div class="apan" id="p-seo">
+          <div class="apt">SEO Settings</div><div class="aps">Tối ưu hoá cho công cụ tìm kiếm.</div>
+          <div class="acard"><div class="fggs">
+            <div class="fg fgfull"><div class="fgl">Page Title</div><input class="fgi" value="Ngo Quynh Duong — AI Builder · SEO Strategist · MIS Student"/></div>
+            <div class="fg fgfull"><div class="fgl">Meta Description</div><textarea class="fgt">Portfolio cá nhân Ngo Quynh Duong — AI Builder, SEO Strategist, MIS Student. Building AI workflows, automation and digital products.</textarea></div>
+            <div class="fg"><div class="fgl">Domain</div><input class="fgi" value="duongngo.dev"/></div>
+            <div class="fg"><div class="fgl">OG Image URL</div><input class="fgi" placeholder="https://..."/></div>
+            <div class="fg fgfull"><div class="fgl">Keywords</div><input class="fgi" value="AI automation, SEO, MIS, portfolio, Ngo Quynh Duong, n8n, freelance Vietnam"/></div>
+            <div class="fg"><div class="fgl">Google Analytics ID</div><input class="fgi" placeholder="G-XXXXXXXXXX"/></div>
+            <div class="fg"><div class="fgl">GSC Verification</div><input class="fgi" placeholder="Verification meta tag"/></div>
+          </div></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="toast">✓ Đã lưu thành công!</div>
+
+<script>
+// NAV scroll
+window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('scrolled',window.scrollY>20))
+
+// Fade on scroll
+const fels=document.querySelectorAll('.fade')
+const fo=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')})},{threshold:0.1})
+fels.forEach(el=>fo.observe(el))
+
+// Project filter
+function fpj(c,btn){
+  document.querySelectorAll('.ptab').forEach(t=>t.classList.remove('active'))
+  btn.classList.add('active')
+  document.querySelectorAll('#pgrid .pcard').forEach(card=>{
+    card.style.display=(c==='all'||card.dataset.c===c)?'block':'none'
+  })
+}
+
+// ADMIN open/close
+function openAdm(e){e.preventDefault();document.getElementById('adm-ov').classList.add('show');document.getElementById('adm').classList.add('open')}
+function closeAdm(){document.getElementById('adm-ov').classList.remove('show');document.getElementById('adm').classList.remove('open')}
+
+// Login
+function doLogin(){
+  const u=document.getElementById('au').value.trim()
+  const p=document.getElementById('ap').value.trim()
+  if(u==='admin'&&p==='duong2026'){
+    document.getElementById('al').style.display='none'
+    document.getElementById('ash').style.display='flex'
+  } else {
+    document.getElementById('aerr').style.display='block'
+  }
+}
+document.getElementById('ap').addEventListener('keydown',e=>{if(e.key==='Enter')doLogin()})
+
+function doLogout(){
+  document.getElementById('ash').style.display='none'
+  document.getElementById('al').style.display='flex'
+  document.getElementById('au').value=''
+  document.getElementById('ap').value=''
+  document.getElementById('aerr').style.display='none'
+}
+
+// Navigate panels
+function ag(id,el){
+  document.querySelectorAll('.apan').forEach(p=>p.classList.remove('active'))
+  document.querySelectorAll('.anav').forEach(n=>n.classList.remove('active'))
+  const pan=document.getElementById('p-'+id)
+  if(pan) pan.classList.add('active')
+  if(el) el.classList.add('active')
+  else document.querySelectorAll('.anav').forEach(n=>{if(n.getAttribute('onclick')&&n.getAttribute('onclick').includes("'"+id+"'"))n.classList.add('active')})
+}
+
+// Save toast
+function doSave(){
+  const t=document.getElementById('toast')
+  t.style.display='block'
+  setTimeout(()=>t.style.display='none',2800)
+}
+
+// Projects
+function tgNP(){const f=document.getElementById('npf');f.style.display=f.style.display==='none'?'block':'none'}
+function addProj(){
+  const name=document.getElementById('npn').value.trim()
+  const cat=document.getElementById('npc').value
+  const tech=document.getElementById('npt').value.trim()
+  if(!name)return
+  const icons={ai:'🤖',seo:'📈',aut:'⚡',uni:'📊'}
+  const row=document.createElement('div')
+  row.className='arow'
+  row.innerHTML='<div><div class="arn">'+icons[cat]+' '+name+'</div><div class="ars">'+cat.toUpperCase()+' · '+tech+'</div></div><div><button class="adel" onclick="this.closest(\'.arow\').remove()">Xoá</button></div>'
+  document.getElementById('plist').appendChild(row)
+  document.getElementById('npn').value=''
+  document.getElementById('npt').value=''
+  document.getElementById('npd').value=''
+  doSave()
+}
+
+// Achievements
+function tgAF(){const f=document.getElementById('af');f.style.display=f.style.display==='none'?'block':'none'}
+function addAch(){
+  const icon=document.getElementById('ai-i').value||'🏆'
+  const title=document.getElementById('ai-t').value.trim()
+  const desc=document.getElementById('ai-d').value.trim()
+  const badge=document.getElementById('ai-b').value.trim()
+  if(!title)return
+  const row=document.createElement('div')
+  row.className='arow'
+  row.innerHTML='<div><div class="arn">'+icon+' '+title+'</div><div class="ars">'+desc+' · '+badge+'</div></div><div><button class="adel" onclick="this.closest(\'.arow\').remove()">Xoá</button></div>'
+  document.getElementById('alist').appendChild(row)
+  doSave()
+}
+
+// Testimonials
+function tgTF(){const f=document.getElementById('tf');f.style.display=f.style.display==='none'?'block':'none'}
+function addTest(){
+  const name=document.getElementById('tn').value.trim()
+  const role=document.getElementById('tr').value.trim()
+  const text=document.getElementById('tt').value.trim()
+  if(!name)return
+  const row=document.createElement('div')
+  row.className='arow'
+  row.innerHTML='<div><div class="arn">'+name+' — '+role+'</div><div class="ars">"'+text.substring(0,60)+'..."</div></div><div><button class="adel" onclick="this.closest(\'.arow\').remove()">Xoá</button></div>'
+  document.getElementById('tlist').appendChild(row)
+  document.getElementById('tn').value=''
+  document.getElementById('tr').value=''
+  document.getElementById('tt').value=''
+  doSave()
+}
+
+// Blog
+function tgBF(){const f=document.getElementById('bf');f.style.display=f.style.display==='none'?'block':'none'}
+function addBlog(){
+  const title=document.getElementById('bt').value.trim()
+  const cat=document.getElementById('bc').value.trim()
+  const meta=document.getElementById('bm').value.trim()
+  if(!title)return
+  const row=document.createElement('div')
+  row.className='arow'
+  row.innerHTML='<div><div class="arn">'+title+'</div><div class="ars">'+cat+' · '+meta+'</div></div><div><button class="adel" onclick="this.closest(\'.arow\').remove()">Xoá</button></div>'
+  document.getElementById('blist').appendChild(row)
+  document.getElementById('bt').value=''
+  document.getElementById('bc').value=''
+  document.getElementById('bm').value=''
+  doSave()
+}
+
+// Timeline
+function addTL(){
+  const d=document.createElement('div')
+  d.className='acard'
+  d.style.padding='13px'
+  d.innerHTML='<div class="fggs"><div class="fg"><div class="fgl">Năm</div><input class="fgi" placeholder="2027"/></div><div class="fg"><div class="fgl">Tiêu đề</div><input class="fgi" placeholder="Startup Launch"/></div><div class="fg fgfull"><div class="fgl">Mô tả</div><textarea class="fgt" style="min-height:50px" placeholder="Mô tả sự kiện..."></textarea></div></div>'
+  document.getElementById('tllist').appendChild(d)
+}
+
+// Colors
+function pColor(el,main,lite){
+  document.querySelectorAll('.sw').forEach(s=>s.classList.remove('sel'))
+  el.classList.add('sel')
+  document.getElementById('chex').value=main
+  updCP(main,lite)
+}
+function cColor(v){if(/^#[0-9a-fA-F]{6}$/.test(v))updCP(v,v)}
+function updCP(main,lite){
+  document.getElementById('cpbar').style.background=main
+  document.getElementById('cpbtn').style.background=main
+}
+function setMode(m){
+  if(m==='dark'){
+    document.documentElement.style.setProperty('--bg','#0f1117')
+    document.documentElement.style.setProperty('--bg2','#161b26')
+    document.documentElement.style.setProperty('--sur','#1e2535')
+    document.documentElement.style.setProperty('--sur2','#1a2030')
+    document.documentElement.style.setProperty('--tx','#e8f0fe')
+    document.documentElement.style.setProperty('--tx2','#c5d5f0')
+    document.documentElement.style.setProperty('--gr','#7a95b8')
+  } else {
+    document.documentElement.style.setProperty('--bg','#f0f6ff')
+    document.documentElement.style.setProperty('--bg2','#e8f2ff')
+    document.documentElement.style.setProperty('--sur','#ffffff')
+    document.documentElement.style.setProperty('--sur2','#f7faff')
+    document.documentElement.style.setProperty('--tx','#0d1b2a')
+    document.documentElement.style.setProperty('--tx2','#1a3456')
+    document.documentElement.style.setProperty('--gr','#5c7a99')
+  }
+  doSave()
+}
+</script>
+</body>
+</html>
